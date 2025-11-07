@@ -1,0 +1,47 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.center {
+  text-align: center;
+  margin-top: 20vh;
+}
+input, button, textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+}
+button:hover {
+  background-color: #222;
+}
+.hidden {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background: #111;
+  padding: 10px;
+}
+nav button {
+  margin: 0 5px;
+}
+#posts {
+  padding: 10px;
+}
+.post {
+  border: 1px solid #333;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.comment {
+  border-top: 1px solid #444;
+  margin-top: 5px;
+  padding-top: 5px;
+}

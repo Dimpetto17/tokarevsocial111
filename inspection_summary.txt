@@ -1,0 +1,72 @@
+Автоматически сгенерированное резюме содержимого архива.
+
+name;compressed_size;uncompressed_size;is_dir
+public/index.html;876;2417;False
+public/style.css;293;695;False
+public/script.js;1083;3212;False
+
+
+Текстовые файлы (превью):
+
+--- public/index.html ---
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ток</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="auth-container" class="center">
+    <h1>Ток</h1>
+    <div id="login-section">
+      <input type="text" id="login-username" placeholder="Имя пользователя" />
+      <input type="password" id="login-password" placeholder="Пароль" />
+      <button onclick="login()">Войти</button>
+      <p>Нет аккаунта? <a href="#" onclick="showRegister()">Регистрация</a></p>
+    </div>
+    <div id="register-section" class="hidden">
+      <input type="text" id="reg-username" placeholder="Имя пользователя" />
+      <input type="password" id="reg-password" placeholder="Пароль" />
+      <button onclick="register()">Зарегистрироваться</button>
+      <p>Уже есть аккаунт? <a href="#" onclick="showLogin()">Войти</a></p>
+    </div>
+  </div>
+
+  <div id="profile-container" class="hidden">
+    <header>
+      <h2 id="welcome"></h2>
+      <button onclick="logout()">Выйти</button>
+    </header>
+    <nav>
+      <button onclick="showPage('feed')">Лента</button>
+      <button onclick="showPage('messages')">Сообщения</button>
+      <button onclick="showPage('friends')">Друзья</button>
+      <button onclick="showPage('profile')">Профиль</button>
+    </nav>
+
+    <main id="feed-page" class="page">
+      <h3>Лента</h3>
+      <div id="posts"></div>
+      <div id="new-post">
+        <textarea id="post-text" placeholder="Что у вас нового?"></textarea>
+        <button onclick="createPost()">Опубликовать</button>
+      </div>
+    </main>
+
+    <main id="messages-page" class="page hidden">
+      <h3>Сообщения</h3>
+      <div id="messages"></div>
+      <input id="msg-input" placeholder="Введите сообщение..." />
+      <button onclick="sendMessage()">Отправить</button>
+    </main>
+
+    <main id="friends-page" class="page hidden">
+      <h3>Друзья</h3>
+      <div id="friends-list"></div>
+  
+... (обрезано)
+
+
+Изображения сохранены в /mnt/data как preview_* для предпросмотра.
